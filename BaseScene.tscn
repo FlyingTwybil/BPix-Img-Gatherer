@@ -1,0 +1,197 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://BpixGather.gd" type="Script" id=1]
+
+[node name="Control" type="MarginContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -404.0
+margin_bottom = -140.0
+rect_min_size = Vector2( 620, 524 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="ColorRect" parent="."]
+margin_right = 620.0
+margin_bottom = 524.0
+rect_min_size = Vector2( 600, 400 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0.219608, 0.298039, 0.235294, 1 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_right = 620.0
+margin_bottom = 524.0
+rect_min_size = Vector2( 600, 0 )
+
+[node name="Title" type="MarginContainer" parent="VBoxContainer"]
+margin_right = 620.0
+margin_bottom = 38.0
+rect_min_size = Vector2( 0, 15 )
+custom_constants/margin_top = 8
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/Title"]
+margin_top = 8.0
+margin_right = 620.0
+margin_bottom = 38.0
+rect_min_size = Vector2( 600, 30 )
+bbcode_enabled = true
+bbcode_text = "[center]LP Beach Bpix Image Gatherer[/center]
+[right]~Made by The Flying Twybil   [/right]"
+text = "LP Beach Bpix Image Gatherer
+~Made by The Flying Twybil   "
+scroll_active = false
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+margin_top = 42.0
+margin_right = 620.0
+margin_bottom = 46.0
+
+[node name="Instructions" type="MarginContainer" parent="VBoxContainer"]
+margin_top = 50.0
+margin_right = 620.0
+margin_bottom = 170.0
+rect_min_size = Vector2( 0, 20 )
+custom_constants/margin_right = 10
+custom_constants/margin_left = 10
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/Instructions"]
+margin_left = 10.0
+margin_right = 610.0
+margin_bottom = 120.0
+rect_min_size = Vector2( 600, 120 )
+bbcode_enabled = true
+bbcode_text = "	To use, start by opening up an album on BPix/Piwigo, and viewing its source. (You can usually find this on a right-click.)
+	
+	From there, copy the whole document (Ctrl-A) and paste it into the below text box.
+	
+	When that's done, just hit gather and your list of links should appear in the result box after a brief delay."
+text = "	To use, start by opening up an album on BPix/Piwigo, and viewing its source. You can usually find this on a right-click under \"View Page Source\".
+	
+	From there, copy the whole document (Ctrl-A) and paste it into the below text box.
+	
+	When that's done, just hit the \"Gather\" button and your list of links should appear in the \"Result\" box after a brief delay."
+scroll_active = false
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer"]
+margin_top = 174.0
+margin_right = 620.0
+margin_bottom = 178.0
+
+[node name="txtentry" type="MarginContainer" parent="VBoxContainer"]
+margin_top = 182.0
+margin_right = 620.0
+margin_bottom = 322.0
+rect_min_size = Vector2( 0, 140 )
+custom_constants/margin_right = 5
+custom_constants/margin_left = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/txtentry"]
+margin_left = 5.0
+margin_right = 615.0
+margin_bottom = 140.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/txtentry/VBoxContainer"]
+margin_right = 610.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 0, 20 )
+text = "Entry:
+"
+scroll_active = false
+
+[node name="Entry" type="TextEdit" parent="VBoxContainer/txtentry/VBoxContainer"]
+margin_top = 24.0
+margin_right = 610.0
+margin_bottom = 140.0
+size_flags_vertical = 3
+
+[node name="HSeparator3" type="HSeparator" parent="VBoxContainer"]
+margin_top = 326.0
+margin_right = 620.0
+margin_bottom = 330.0
+
+[node name="txtresult" type="MarginContainer" parent="VBoxContainer"]
+margin_top = 334.0
+margin_right = 620.0
+margin_bottom = 474.0
+rect_min_size = Vector2( 0, 140 )
+custom_constants/margin_right = 5
+custom_constants/margin_left = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/txtresult"]
+margin_left = 5.0
+margin_right = 615.0
+margin_bottom = 140.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/txtresult/VBoxContainer"]
+margin_right = 610.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 0, 20 )
+text = "Result:"
+scroll_active = false
+
+[node name="Result" type="TextEdit" parent="VBoxContainer/txtresult/VBoxContainer"]
+margin_top = 24.0
+margin_right = 610.0
+margin_bottom = 140.0
+size_flags_vertical = 3
+readonly = true
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+margin_top = 478.0
+margin_right = 620.0
+margin_bottom = 524.0
+rect_min_size = Vector2( 0, 40 )
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/MarginContainer"]
+margin_right = 620.0
+margin_bottom = 46.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0.321569, 0.407843, 0.368627, 1 )
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/MarginContainer"]
+margin_right = 620.0
+margin_bottom = 46.0
+custom_constants/margin_top = 8
+custom_constants/margin_bottom = 8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/MarginContainer/MarginContainer"]
+margin_top = 8.0
+margin_right = 620.0
+margin_bottom = 38.0
+rect_min_size = Vector2( 0, 30 )
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/MarginContainer/MarginContainer/HBoxContainer"]
+margin_right = 308.0
+margin_bottom = 30.0
+size_flags_horizontal = 3
+custom_constants/margin_right = 50
+custom_constants/margin_left = 25
+
+[node name="GatherButton" type="Button" parent="VBoxContainer/MarginContainer/MarginContainer/HBoxContainer/MarginContainer"]
+margin_left = 25.0
+margin_right = 258.0
+margin_bottom = 30.0
+text = "Gather Links"
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/MarginContainer/MarginContainer/HBoxContainer"]
+margin_left = 312.0
+margin_right = 620.0
+margin_bottom = 30.0
+size_flags_horizontal = 3
+custom_constants/margin_right = 25
+custom_constants/margin_left = 50
+
+[node name="CopyButton" type="Button" parent="VBoxContainer/MarginContainer/MarginContainer/HBoxContainer/MarginContainer2"]
+margin_left = 50.0
+margin_right = 283.0
+margin_bottom = 30.0
+text = "Copy to Clipboard"
+[connection signal="pressed" from="VBoxContainer/MarginContainer/MarginContainer/HBoxContainer/MarginContainer/GatherButton" to="." method="_on_GatherButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer/MarginContainer/HBoxContainer/MarginContainer2/CopyButton" to="." method="_on_CopyButton_pressed"]
