@@ -16,10 +16,10 @@ _global_script_class_icons={
 [application]
 
 config/name="BPix Img Gatherer"
+config/description="Quickly gathers image links from Bpix pages."
 run/main_scene="res://BaseScene.tscn"
 boot_splash/image="res://splash.png"
 config/icon="res://icon.png"
-config/description="Quickly gathers image links from Bpix pages."
 
 [display]
 

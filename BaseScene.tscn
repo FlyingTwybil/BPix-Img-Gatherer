@@ -68,11 +68,11 @@ bbcode_text = "	To use, start by opening up an album on BPix/Piwigo, and viewing
 	From there, copy the whole document (Ctrl-A) and paste it into the below text box.
 	
 	When that's done, just hit gather and your list of links should appear in the result box after a brief delay."
-text = "	To use, start by opening up an album on BPix/Piwigo, and viewing its source. You can usually find this on a right-click under \"View Page Source\".
+text = "	To use, start by opening up an album on BPix/Piwigo, and viewing its source. (You can usually find this on a right-click.)
 	
 	From there, copy the whole document (Ctrl-A) and paste it into the below text box.
 	
-	When that's done, just hit the \"Gather\" button and your list of links should appear in the \"Result\" box after a brief delay."
+	When that's done, just hit gather and your list of links should appear in the result box after a brief delay."
 scroll_active = false
 
 [node name="HSeparator2" type="HSeparator" parent="VBoxContainer"]
@@ -138,6 +138,7 @@ margin_right = 610.0
 margin_bottom = 140.0
 size_flags_vertical = 3
 readonly = true
+show_line_numbers = true
 
 [node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
 margin_top = 478.0

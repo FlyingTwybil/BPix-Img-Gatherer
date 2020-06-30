@@ -26,6 +26,9 @@ func _on_GatherButton_pressed():
 	if text and text != "":
 		#This should separate the entire document into beginning with only the image source.
 		#It starts with (__data) and continues from there.
+		
+		result_textedit.text = ""
+		
 		var first_split : Array = text.split('<img src="')
 		
 		first_split.pop_front()
@@ -58,7 +61,7 @@ func _on_GatherButton_pressed():
 				var cleaning_split = result_text.rsplit("\n", true, 1)
 				
 				result_textedit.text = cleaning_split[0]
-				print("Everything went fine! Have a nice day!")
+				#print("Everything went fine! Have a nice day!")
 	pass
 
 
